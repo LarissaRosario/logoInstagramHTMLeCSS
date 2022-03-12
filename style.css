@@ -1,0 +1,89 @@
+body{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(to right top, #000000, #141414, #212121, #2f2f2f, #3d3d3d);
+gap: 200px;
+}
+
+h1 {
+color: #4e4d4d;
+font-size: 2rem;
+}
+
+h1:hover {
+    color: #ffffff;
+
+   
+}
+
+
+
+div{
+height: 20rem;
+width: 20rem;
+background: radial-gradient( 
+    circle at 33% 100%,
+    #fed373 4%, 
+    #f15245 30%, 
+    #d92e7f 62%, 
+    #9b36b7 86%,
+    #515ecf);
+    border-radius: 30%;
+    position: relative;
+    box-shadow: 0px 0px 15px rgb(15, 15, 15);
+}
+
+div::before {
+content:'';
+border: 1rem solid  #fff;
+border-radius: 30%;
+width: 12.5rem;
+height: 12.5rem;
+left: 0;
+right: 0;
+position: absolute;
+margin: auto;
+top: 0;
+bottom: 0;
+}
+
+div::after {
+content:'';
+border: 1rem solid #fff;
+border-radius: 100%;
+width: 5rem;
+height: 5rem;
+left: 0;
+right: 0;
+position: absolute;
+margin: auto;
+top:0;
+bottom:0;
+}
+
+
+span{
+content:'';
+border: 1rem solid #fff;
+border-radius: 100%;
+width: 0;
+height: 0;
+right: 5rem;
+position: absolute;
+margin: auto;
+top: 5rem;
+
+}
+
+div:hover {
+    background: radial-gradient( 
+        circle at 33% 100%,
+        #f8d78f 4%, 
+        #f37468 30%, 
+        #d85693 62%, 
+        #a15bb4 86%,
+        #7a83d4);
+}
